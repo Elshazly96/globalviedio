@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> فيديوهات الشقق - برج الهنا </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 1.5rem;
+        }
+        .video-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-card video {
+            width: 100%;
+            height: auto;
+            max-width: 700px; /* Maximum width for videos */
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .description-box {
+            background-color: #e9f5ff;
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.25rem;
+            text-align: right; /* Ensure text aligns right in RTL context */
+            width: 100%;
+        }
+        .description-box p {
+            margin: 0;
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="bg-blue-600 text-white p-6 rounded-t-xl shadow-lg mb-8 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-2">معرض فيديوهات شقق برج الهنا</h1>
+            <p class="text-lg sm:text-xl">اكتشف تفاصيل شقق برج الهنا من خلال الفيديوهات</p>
+            <a href="https://maps.app.goo.gl/H6BZeEdUdRK2Zhv17" target="_blank" rel="noopener noreferrer"
+               class="inline-block mt-4 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-blue-100 transition duration-300 ease-in-out">
+                لوكيشن البرج
+            </a>
+            </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="video-card">
+                <h2 class="text-2xl font-semibold text-blue-700 mb-3">فيديو شقة 701</h2>
+                <video controls preload="metadata" poster="https://via.placeholder.com/640x360?text=شقة+701+بوستر">
+                    <source src="videos2/701.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو. يرجى التحديث إلى أحدث إصدار.
+                </video>
+                <div class="description-box">
+                    <h3 class="font-bold text-lg mb-1">تفاصيل الشقة 701:</h3>
+                    <p>أدخل وصف شقة 701 هنا.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <h2 class="text-2xl font-semibold text-blue-700 mb-3">فيديو شقة عروض</h2>
+                <video controls preload="metadata" poster="https://via.placeholder.com/640x360?text=شقة+عروض+بوستر">
+                    <source src="videos2/شقة عروض.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو. يرجى التحديث إلى أحدث إصدار.
+                </video>
+                <div class="description-box">
+                    <h3 class="font-bold text-lg mb-1">تفاصيل شقة عروض:</h3>
+                    <p>أدخل وصف شقة عروض هنا.</p>
+                </div>
+            </div>
+
+            </div>
+
+        <footer class="text-center text-gray-600 text-sm mt-12 p-4">
+            <p>&copy; 2025 مشروع عرض الفيديوهات الخاص بك. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+</body>
+</html>
